@@ -26,10 +26,8 @@ int LinerSearch(int arr[], int size, int element)
         {
             return i;
         }
-        
     }
-            return -1;
-    
+    return -1;
 }
 
 int BinarySearch(int arr[], int size, int element)
@@ -37,7 +35,7 @@ int BinarySearch(int arr[], int size, int element)
     int low, high, mid;
     low = 0;
     high = size - 1;
-    
+
     while (low <= high)
     {
         mid = (low + high) / 2;
