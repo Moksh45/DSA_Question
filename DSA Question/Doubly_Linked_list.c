@@ -55,6 +55,7 @@ struct Node *insertAtIndex(struct Node *head, int data, int index)
     ptr->previous=p;
     p->next = ptr;
 
+
     return head;
 }
 
