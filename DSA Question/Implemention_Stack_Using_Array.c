@@ -36,7 +36,7 @@ int main()
     // we use this also
 
     // struct stack s;
-    // s.size=6;
+    // s.size=6;  
     // s.top=-1;
     // s.arr=(int*)malloc(s.size*sizeof(int));
 
