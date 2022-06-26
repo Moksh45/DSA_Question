@@ -82,14 +82,23 @@ int main()
     push(s, 80);
     push(s, 90);
     push(s, 100);
+
+    printf("\n\n");
+    printf("element at postion 1 %d\n", peek(s, 1));
+    printf("element at postion 2 %d\n", peek(s, 2));
+    printf("element at postion 3 %d\n", peek(s, 3));
+    printf("element at postion 4 %d\n", peek(s, 4));
+    printf("element at postion 5 %d\n", peek(s, 5));
+    printf("element at postion 6 %d\n", peek(s, 6));
+    printf("element at postion 7 %d\n", peek(s, 7));
+    printf("element at postion 7 %d\n", peek(s, 7));
+    printf("element at postion 8 %d\n", peek(s, 8));
+    printf("element at postion 9 %d\n", peek(s, 9));
+    printf("element at postion 10 %d\n", peek(s, 10));
+   
     
 
     printf("\n\n");
-    printf("element at postion 1 %d",peek(s,1));
-
-
-
-    printf("\n\n");
 
     printf("Popped %d from the stack\n", pop(s)); // --> Last in first out!
     printf("Popped %d from the stack\n", pop(s)); // --> Last in first out!
@@ -101,7 +110,6 @@ int main()
     printf("Popped %d from the stack\n", pop(s)); // --> Last in first out!
     printf("Popped %d from the stack\n", pop(s)); // --> Last in first out!
     printf("Popped %d from the stack\n", pop(s)); // --> Last in first out!
-    
 
-    
+    return 0;
 }
