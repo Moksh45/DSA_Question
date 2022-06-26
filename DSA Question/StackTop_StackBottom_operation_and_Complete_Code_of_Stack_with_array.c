@@ -1,3 +1,5 @@
+// All Operation in one Code
+
 #include <stdio.h>
 #include <stdlib.h>
 struct stack
@@ -64,6 +66,16 @@ int peek(struct stack *p, int position)
     }
 }
 
+int stackTop(struct stack *ptr)
+{
+    return ptr->arr[ptr->top];
+}
+
+int stackBottom(struct stack *ptr)
+{
+    return ptr->arr[0];
+}
+
 int main()
 {
     struct stack *s = (struct stack *)malloc(sizeof(struct stack));
@@ -100,6 +112,10 @@ int main()
     {
         printf("element at postion i %d\n", peek(s, i));
     }
+    printf("\n\n");
+
+    printf("Top Element Of Stack %d\n", stackTop(s));
+    printf("Bottom Element Of Stack %d\n", stackBottom(s));
 
     printf("\n\n");
 
@@ -113,6 +129,7 @@ int main()
     printf("Popped %d from the stack\n", pop(s)); // --> Last in first out!
     printf("Popped %d from the stack\n", pop(s)); // --> Last in first out!
     printf("Popped %d from the stack\n", pop(s)); // --> Last in first out!
+
 
     return 0;
 }
