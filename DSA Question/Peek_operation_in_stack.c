@@ -84,17 +84,23 @@ int main()
     push(s, 100);
 
     printf("\n\n");
-    printf("element at postion 1 %d\n", peek(s, 1));
-    printf("element at postion 2 %d\n", peek(s, 2));
-    printf("element at postion 3 %d\n", peek(s, 3));
-    printf("element at postion 4 %d\n", peek(s, 4));
-    printf("element at postion 5 %d\n", peek(s, 5));
-    printf("element at postion 6 %d\n", peek(s, 6));
-    printf("element at postion 7 %d\n", peek(s, 7));
-    printf("element at postion 7 %d\n", peek(s, 7));
-    printf("element at postion 8 %d\n", peek(s, 8));
-    printf("element at postion 9 %d\n", peek(s, 9));
-    printf("element at postion 10 %d\n", peek(s, 10));
+    // printf("element at postion 1 %d\n", peek(s, 1));
+    // printf("element at postion 2 %d\n", peek(s, 2));
+    // printf("element at postion 3 %d\n", peek(s, 3));
+    // printf("element at postion 4 %d\n", peek(s, 4));
+    // printf("element at postion 5 %d\n", peek(s, 5));
+    // printf("element at postion 6 %d\n", peek(s, 6));
+    // printf("element at postion 7 %d\n", peek(s, 7));
+    // printf("element at postion 7 %d\n", peek(s, 7));
+    // printf("element at postion 8 %d\n", peek(s, 8));
+    // printf("element at postion 9 %d\n", peek(s, 9));
+    // printf("element at postion 10 %d\n", peek(s, 10));
+
+    for (int i = 1; i <= s->size; i++)
+    {
+        printf("element at postion i %d\n", peek(s, i));
+    }
+    
    
     
 
