@@ -1,3 +1,11 @@
- // head = insertAfterNode(head, third, 45);
-    // printf("\nLinked list after insertion\n");
-    // linkedListTraversal(head);
+
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+int isFull(struct stack *ptr)
+{
+    if (ptr->top == ptr->size - 1)
