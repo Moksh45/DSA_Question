@@ -130,6 +130,5 @@ int main()
     printf("Popped %d from the stack\n", pop(s)); // --> Last in first out!
     printf("Popped %d from the stack\n", pop(s)); // --> Last in first out!
 
-
     return 0;
 }
