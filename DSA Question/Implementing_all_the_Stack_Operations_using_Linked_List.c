@@ -57,16 +57,19 @@ struct Node *push(struct Node *top, int x)
     }
 }
 
-int pop(struct Node** top){
-    if(isEmpty(*top)){
+int pop(struct Node **top)
+{
+    if (isEmpty(*top))
+    {
         printf("Stack Underflow\n");
     }
-    else{
-        struct Node* n = *top;
+    else
+    {
+        struct Node *n = *top;
         *top = (*top)->next;
         int x = n->data;
         free(n);
-        return x; 
+        return x;
     }
 }
 
@@ -84,7 +87,6 @@ int main()
     int element = pop(&top);
     printf("Popped element is %d\n", element);
     linkedListTraversal(top);
-
 
     return 0;
 }
