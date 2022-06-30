@@ -36,6 +36,7 @@ int pop(struct stack *p)
 
     char val = p->arr[p->top];
     p->top--;
+    return val;
 }
 
 int isParenthesis(char *exp)
@@ -45,7 +46,7 @@ int isParenthesis(char *exp)
     sp->top = -1;
     sp->arr = (char *)malloc(sp->size * sizeof(char));
 
-    for (int i = 0; i != '\0'; i++)
+    for (int i = 0; exp[i] != '\0'; i++)
     {
         if (exp[i] == '(')
         {
@@ -55,7 +56,7 @@ int isParenthesis(char *exp)
         {
             if (isEmpty(sp))
             {
-                return 1;
+                return 0;
             }
             pop(sp);
         }
@@ -69,7 +70,7 @@ int isParenthesis(char *exp)
 
 int main()
 {
-    char *exp = "((((((9*8)";
+    char *exp = "((((_))))))()())()()())(";
     if (isParenthesis(exp))
     {
         printf("Parenthesis Match");
