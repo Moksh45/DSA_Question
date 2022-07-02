@@ -55,7 +55,7 @@ int main()
 {
     struct queue q;
     q.size = 4;
-    q.f = q.r = 0;
+    q.f = q.r = -1;
     q.arr = (int *)malloc(q.size * sizeof(int));
 
     // --> be can also use pointer like this way <--
@@ -69,6 +69,8 @@ int main()
     enqueue(&q, 12);
     enqueue(&q, 15);
     enqueue(&q, 1);
+    enqueue(&q, 10);
+
     // enqueue(&q, 45);
     printf("Dequeuing element %d\n", dequeue(&q));
     printf("Dequeuing element %d\n", dequeue(&q));
